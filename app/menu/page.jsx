@@ -160,7 +160,7 @@ export default function MenuPage() {
                 {category.items.map((item, index) => (
                   <div key={index}>
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-                      <div className="hidden sm:block">
+                      <div className="sm:block">
                         <Image
                           src={item.image || "/placeholder.svg"}
                           alt={item.name}
@@ -171,7 +171,9 @@ export default function MenuPage() {
                       </div>
                       <div className="flex-1 space-y-1">
                         <div className="flex items-center justify-between">
-                          <h3 className="text-xl font-semibold">{item.name}</h3>
+                          <h3 className="text-xl font-semibold ">
+                            {item.name}
+                          </h3>
                           <div className="font-medium">{item.price}</div>
                         </div>
                         <p className="text-sm text-muted-foreground">
