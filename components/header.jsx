@@ -6,10 +6,10 @@ import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { useIsMobile } from "@/hooks/use-mobile";
+import { useMobile } from "@/hooks/use-mobile";
 
 export default function Header() {
-  const isMobile = useIsMobile();
+  const isMobile = useMobile();
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
