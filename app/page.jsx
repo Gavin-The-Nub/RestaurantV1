@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="relative h-[70vh] w-full overflow-hidden">
+      <section className="relative m-h-500px h-[70vh] w-full overflow-hidden">
         <Image
           src="/home.webp"
           alt="Restaurant interior"
